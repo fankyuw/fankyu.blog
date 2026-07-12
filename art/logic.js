@@ -38,8 +38,10 @@ $.ajax({
             currentImg.appendChild(img)
             var newText = element.replaceAll("%5C","/")
             var newPath = newText.replaceAll("/assets","")
+            
             if (window.location.hostname == "fankyu.blog") {
-                img.setAttribute("src",newText)
+                var path = "/art/assets/" + newText
+                img.setAttribute("src",path)
                 console.log('im on website')
                 console.log(newText)
             }else {
