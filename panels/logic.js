@@ -1,7 +1,7 @@
 var imgs = []
 var imgsExt = ["png","jpg","jpeg","webp"]
 
-var assetPath = "/art/assets/"
+var assetPath = "/panels/assets/"
 
 const imgNode = document.createElement("img")
 imgNode.setAttribute("class","img")
