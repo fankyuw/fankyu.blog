@@ -26,7 +26,7 @@ $.ajax({
             var newText = element.replaceAll("%5C","/")
             var newPath = newText.replaceAll("/assets","")
             if (window.location.hostname == "fankyu.blog") {
-                var path = "/art/assets/" + newText
+                var path = "/panels/assets/" + newText
                 currentImg.setAttribute("src",path)
                 console.log('im on website')
                 console.log(newText)
