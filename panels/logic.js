@@ -5,6 +5,9 @@ var assetPath = "/panels/assets/"
 
 const imgNode = document.createElement("img")
 imgNode.setAttribute("class","img")
+const popinNode = document.createElement("div")
+popinNode.setAttribute("class","popin")
+
 
 $.ajax({
     // type: "method",
@@ -27,6 +30,8 @@ $.ajax({
             }else {
                 currentImg.setAttribute("src",newText)
             }
+            const currentPopin = currentImg.appendChild(popinNode.cloneNode()) 
+            currentPopin.innerHTML = 'GAY'
         })
     }
 });
