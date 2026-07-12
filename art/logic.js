@@ -39,9 +39,9 @@ $.ajax({
             var newText = element.replaceAll("%5C","/")
             var newPath = newText.replaceAll("/assets","")
             if (window.location.hostname == "fankyu.blog") {
-                img.setAttribute("src",newText)
-            }else {
                 img.setAttribute("src",newPath)
+            }else {
+                img.setAttribute("src",newText)
             }
             const currentPopin =  currentImg.appendChild(popinNode.cloneNode())
             const divNode = document.createElement("div")
