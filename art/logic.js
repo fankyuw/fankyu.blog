@@ -41,7 +41,7 @@ $.ajax({
             if (window.location.hostname == "fankyu.blog") {
                 img.setAttribute("src",newText)
             }else {
-                img.setAttribute("src",newText)
+                img.setAttribute("src",newPath)
             }
             const currentPopin =  currentImg.appendChild(popinNode.cloneNode())
             const divNode = document.createElement("div")
