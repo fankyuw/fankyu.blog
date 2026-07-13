@@ -167,7 +167,13 @@ a{
 .modal-image{
     display: block;
     margin: auto;
-    width: 40%;
+    max-width: 80%;
     justify-content: center;
     align-items: center;
+}
+
+.modal-content{
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
