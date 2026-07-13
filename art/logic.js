@@ -27,7 +27,11 @@ function fixModalSize() {
     modalimg.style.marginTop = window.innerHeight * 0.025 + "px";
     if (window.innerWidth * 0.8 < parseInt(modalimg.style.height)) {
         console.log("width is smaller than height")
-        modalimg.style.height = window.innerWidth * 0.8 + "px";
+        if (!zoom) {
+            modalimg.style.height = window.innerWidth * 0.8 + "px";
+        } else {
+            modalimg.style.height = "100%";
+        }
     }
     if (zoom) {
         modalimg.style.marginTop = 0;
@@ -38,9 +42,16 @@ function fixModalSize() {
 }
 
 fixModalSize()
+
 window.addEventListener("resize", function() {
     fixModalSize()
-})
+    if (window.innerWidth * 0.8 < 600) {
+        console.log("width is smaller than height")
+        Array.from(document.getElementsByClassName("img")).forEach(function(img) {
+            img.style.height = window.innerWidth * 0.8 + "px";
+        });
+    }
+});
 var zoom = false
 
 modalimg.addEventListener("mouseover", function() {

@@ -5,10 +5,14 @@ body {
     animation: scroll 3s linear infinite;
     font-size: x-large;
     background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    place-items: center;
 }
 
 header{
-
+    width: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -59,8 +63,6 @@ a{
     font-family:monospace;
     display: block;
     margin: 10px;
-    margin-left: 30%;
-    margin-right: 30%;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -71,6 +73,7 @@ a{
     align-items: center;
     justify-content: center;
     width: 650px;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -139,7 +142,8 @@ a{
 
 .cButton{
     color: rgb(0, 119, 255);
-    height: 36px;
+    image-rendering: pixel;
+    height: 65%;
     left: 92%;
     top: -40%;
     position: relative;
