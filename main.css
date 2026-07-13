@@ -1,6 +1,6 @@
 body {
     background-image: url("assets/baaaaka.png");
-    image-rendering: pixelated;
+    /* image-rendering: pixelated; */
     background-size: 100px;
     animation: scroll 3s linear infinite;
     font-size: x-large;
@@ -29,6 +29,7 @@ a{
 }
 
 .gradient{
+    image-rendering:auto;
     background-image: linear-gradient(to bottom,rgba(9, 4, 36, 0.671),rgba(234, 0, 255, 0.13));
     position:fixed;
     top: 0%;
