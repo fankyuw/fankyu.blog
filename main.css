@@ -81,7 +81,6 @@ a{
     margin: auto;
     flex-wrap: wrap;
     display: flex;
-    align-items: center;
     justify-content: center;
     grid-auto-flow: column ;
 }
@@ -131,6 +130,7 @@ a{
     align-items: center;
     justify-content: center;
     text-align: center;
+    max-width: 500px;
 }
 
 .headblog{
@@ -147,6 +147,7 @@ a{
     left: 92%;
     top: -40%;
     position: relative;
+    image-rendering: pixelated;
     
 }
 .cButton:hover{
