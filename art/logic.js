@@ -133,8 +133,7 @@ $.ajax({
             currentPopin.appendChild(fullscreenButton)
 
             var fileName = newPath.replaceAll("/art/","")
-
-            divNode.innerHTML = fileName
+            divNode.innerHTML = fileName.split("-")[1]
             currentImg.addEventListener("mouseover", function() {
                 currentPopin.setAttribute("style","display: block;")
             })
