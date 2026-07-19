@@ -182,3 +182,14 @@ a{
     align-items: center;
     position: relative;
 }
+
+#text-container{
+    display: flex;
+    white-space: pre-wrap;
+    background-color: #f4f4f4;
+    padding: 15px;
+    font-family: monospace;
+    border: 1px solid #ccc;
+    width: 900px;
+    max-width: 80%;
+}
